@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.17)
+project(lab3)
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+set(CMAKE_CXX_STANDARD 20)
+add_executable(lab3 main.cpp graphics.cpp graphics.h reader.cpp reader.h point.cpp point.h triangle.cpp triangle.h convex_hull.cpp convex_hull.h graham.cpp graham.h andrew_jarvis.cpp andrew_jarvis.h line.cpp line.h points_set.cpp points_set.h kirkpatrick.cpp kirkpatrick.h fortune.cpp fortune.h scene_state.cpp scene_state.h button.cpp button.h base_class.h delaunay.cpp delaunay.h input_field.cpp input_field.h)
+target_link_libraries(lab3 sfml-graphics sfml-audio)
